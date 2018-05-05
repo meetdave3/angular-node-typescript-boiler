@@ -1,0 +1,16 @@
+{
+    "short_name": "Angular 5 Boiler",
+    "name": "Angular 5 PWA",
+    "start_url": "/",
+    "theme_color": "#f48c5b",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/assets/angular.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
