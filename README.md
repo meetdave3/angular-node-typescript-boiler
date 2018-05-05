@@ -6,14 +6,14 @@ This repo shall allow you to instantly get started with a full stack project in 
 
 ## Repo Features 
 
-Markup : - [x] Angular 6.0.0
-         - [x] Bootstrap
-         - [x] Lazy Loaded Routes
-         - [x] Angular Material
-         - [x] PWA
-         - [x] Server Side TypeScript
-         - [x] Node.js API
-         - [x] Production Ready Build
+- [x] Angular 6.0.0
+- [x] Bootstrap
+- [x] Lazy Loaded Routes
+- [x] Angular Material
+- [x] PWA
+- [x] Server Side TypeScript
+- [x] Node.js API
+- [x] Production Ready Build
 
 ## Development server
 
