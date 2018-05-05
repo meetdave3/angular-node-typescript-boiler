@@ -29,9 +29,9 @@ Run `ng g c component-name` to generate a new component. You can also use `ng ge
 
 ## Production Build
 
-First run `ng build --prod`
+First run `ng build --prod` to build the project
 
-Then, Run `npm run prod` to build the project. The build artifacts will be stored in the `dist/` directory. 
+Then, `npm run prod` to start the node server for production. The build artifacts will be stored in the `dist/` directory. 
 
 ## Running unit tests
 
