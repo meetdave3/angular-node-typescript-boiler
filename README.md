@@ -1,6 +1,6 @@
 # Angular 6 + Node.js - Boiler
 
-[![Build Status](https://travis-ci.com/meetdave3/Angular6-Node.js-TypeScript.svg?branch=master)](https://github.com/meetdave3/Angular6-Node.js-TypeScript)
+[![Build Status](https://travis-ci.com/meetdave3/Angular6-Node.js-TypeScript.svg?branch=master)](https://travis-ci.com/meetdave3/Angular6-Node.js-TypeScript)
 
 This project is a starter project with Node at the backend (fully written in TypeScript) and Angular 6 at the frontend.
 
