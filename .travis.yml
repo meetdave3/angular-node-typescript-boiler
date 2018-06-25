@@ -1,0 +1,22 @@
+language: node_js
+
+node_js:
+  - "8"
+
+dist: trusty
+
+sudo: required
+
+cache:
+  directories:
+    - node_modules
+
+addons:
+  chrome: stable
+
+before_script:
+  - npm install
+  - npm install -g @angular/cli
+
+script:
+  - npm run prod
