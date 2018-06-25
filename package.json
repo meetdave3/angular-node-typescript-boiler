@@ -10,9 +10,9 @@
     "nodemon": "nodemon dist/server/server.js",
     "dev": "tsc && npm run post-dev",
     "post-dev": "concurrently \"tsc -w\" \"nodemon dist/server/server.js\"",
-    "prod": "tsc && npm run post-prod",
-    "post-prod": "concurrently \"tsc\" \"node dist/server/server.js\"",
-    "test": "ng test",
+    "prod": "ng build --prod --aot && tsc && npm run post-prod",
+    "post-prod": "node dist/server/server.js",
+    "test": "ng build --prod --aot && tsc",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
