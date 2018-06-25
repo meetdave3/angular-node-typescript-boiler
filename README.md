@@ -15,11 +15,15 @@ This repo shall allow you to instantly get started with a full stack project in 
 - [x] Node.js API
 - [x] Production Ready Build
 
+## Setup
+
+After cloning, run `npm install`
+
 ## Development server
 
-First run `ng build --watch` 
+Run `ng build --watch` 
 
-Then, `npm run dev` for a dev server. Navigate to `http://localhost:3000/`. 
+After the --watch build, `npm run dev` for a dev server. Navigate to `http://localhost:3000/`. 
 
 The app will automatically reload if you change any of the source files. (Server side as well as client side)
 
