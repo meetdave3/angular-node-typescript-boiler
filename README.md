@@ -2,20 +2,21 @@
 
 [![Build Status](https://travis-ci.com/meetdave3/Angular6-Node.js-TypeScript.svg?branch=master)](https://travis-ci.com/meetdave3/Angular6-Node.js-TypeScript)
 
-This project is a starter project with Node at the backend (fully written in TypeScript) and Angular 6 at the frontend.
+This project is a starter project with Node at the backend (fully written in TypeScript) and Angular 6 on the client side. 
 
 This repo shall allow you to instantly get started with a full stack project in place. Just connect it with your favorite database and you're good to go.
 
 ## Repo Features 
 
-- [x] Angular 6.0.0
+- [x] Angular 6.0.9
 - [x] Bootstrap
 - [x] Lazy Loaded Routes
 - [x] Angular Material
-- [x] PWA
+- [x] PWA Ready
 - [x] Server Side TypeScript
 - [x] Node.js API
 - [x] Production Ready Build
+- [x] Server Side Rendering (Angular Universal)
 
 ## Setup
 
@@ -23,11 +24,9 @@ After cloning, run `npm install`
 
 ## Development server
 
-Run `ng build --watch` 
+Run `ng serve` 
 
-After the --watch build, `npm run dev` for a dev server. Navigate to `http://localhost:3000/`. 
-
-The app will automatically reload if you change any of the source files. (Server side as well as client side)
+Navigate to `http://localhost:4200/`. 
 
 ## Code scaffolding
 
@@ -35,9 +34,11 @@ Run `ng g c component-name` to generate a new component. You can also use `ng ge
 
 ## Production Build
 
-First run `ng build --prod` to build the project
+Run `npm run build:ssr && npm run serve:ssr` to build the project
 
-Then, `npm run prod` to start the node server for production. The build artifacts will be stored in the `dist/` directory. 
+Compiles the boiler application and spins up a Node Express to serve the Boiler Universal application on http://localhost:3000
+
+`npm run build:prerender && npm run serve:prerender` - Compiles your application and prerenders your application's files, spinning up a demo http-server so you can view it on http://localhost:8080 Note: To deploy your static site to a static hosting platform you will have to deploy the dist/browser folder, rather than the usual dist
 
 ## Running unit tests
 
