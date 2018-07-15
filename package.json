@@ -14,7 +14,14 @@
     "post-prod": "node dist/server/server.js",
     "test": "ng build --prod --aot && tsc",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:client-and-server-bundles": "ng build --prod && ng run my-app:server:production",
+    "build:prerender": "npm run build:client-and-server-bundles && npm run webpack:server && npm run generate:prerender",
+    "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
+    "generate:prerender": "cd dist && node prerender",
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
+    "serve:prerender": "cd dist/browser && http-server",
+    "serve:ssr": "node dist/server"
   },
   "private": true,
   "dependencies": {
@@ -68,6 +75,7 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.10.0",
-    "typescript": "^2.7.2"
+    "typescript": "^2.7.2",
+    "webpack-cli": "^3.0.8"
   }
 }

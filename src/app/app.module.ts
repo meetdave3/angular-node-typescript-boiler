@@ -25,7 +25,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     WelcomeComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({appId: 'angular6-boiler'}),
+    BrowserModule.withServerTransition({appId: 'my-app'}),
     HttpModule,
     BrowserAnimationsModule,
     CommonModule,
