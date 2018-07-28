@@ -17,8 +17,6 @@ addons:
 before_script:
   - npm install
   - npm install -g @angular/cli
-  - npm remove webpack -g
-  - npm i webpack --save-dev
 
 script:
-  - npm run test
+  - npm run build:ssr
