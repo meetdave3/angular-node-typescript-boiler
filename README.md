@@ -34,7 +34,7 @@ Run `ng g c component-name` to generate a new component. You can also use `ng ge
 
 ## Production Build
 
-Run `npm run build:ssr && npm run serve:ssr` to build the project
+Run `npm run build:prerender && npm run serve:ssr` to build the project
 
 Compiles the boiler application and spins up a Node Express to serve the Boiler Universal application on http://localhost:3015
 
