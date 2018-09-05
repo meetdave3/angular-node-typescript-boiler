@@ -8,7 +8,7 @@ This repo shall allow you to instantly get started with a full stack project in 
 
 ## Repo Features 
 
-- [x] Angular 6.0.9
+- [x] Angular 6.1.6
 - [x] Bootstrap
 - [x] Lazy Loaded Routes
 - [x] Angular Material
