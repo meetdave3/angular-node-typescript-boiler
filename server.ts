@@ -8,6 +8,7 @@ import { enableProdMode } from '@angular/core';
 import * as express from 'express';
 import { join } from 'path';
 import { readFileSync } from 'fs';
+const api = require('./server/routes/api');
 
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
@@ -40,6 +41,7 @@ app.engine('html', (_, options, callback) => {
   });
 });
 
+app.use('/api', api);
 app.set('view engine', 'html');
 app.set('views', join(DIST_FOLDER, 'browser'));
 
