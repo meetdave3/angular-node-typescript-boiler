@@ -25,6 +25,7 @@ After cloning, run `npm install`
 ## Development server
 
 Run `npm run start` to spin the front end Angular 
+
 Run `npm run dev` to start the Node server in development mode
 
 Navigate to `http://localhost:3015/`. 
