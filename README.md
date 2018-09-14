@@ -14,8 +14,9 @@ This repo shall allow you to instantly get started with a full stack project in 
 - [x] Angular Material
 - [x] PWA Ready
 - [x] Server Side TypeScript
-- [x] Node.js API
+- [x] Node.js Express API written in TypeScript
 - [x] Production Ready Build
+- [x] Established Dev Environment
 - [x] Server Side Rendering (Angular Universal)
 
 ## Setup
@@ -24,13 +25,13 @@ After cloning, run `npm install`
 
 ## Development server
 
-Run `npm run start` to spin the front end Angular 
+Run `npm run start` to spin front end code,
 
 Run `npm run dev` to start the Node server in development mode
 
 Navigate to `http://localhost:3015/`. 
 
-You can now seamlessly see your changes reflect in realtime everytime you save your file.
+You can now seamlessly watch your changes reflect in realtime everytime you save your changes.
 
 ## Code scaffolding
 
