@@ -24,9 +24,12 @@ After cloning, run `npm install`
 
 ## Development server
 
-Run `ng serve` 
+Run `npm run start` to spin the front end Angular 
+Run `npm run dev` to start the Node server in development mode
 
-Navigate to `http://localhost:4200/`. 
+Navigate to `http://localhost:3015/`. 
+
+You can now seamlessly see your changes reflect in realtime everytime you save your file.
 
 ## Code scaffolding
 
