@@ -13,7 +13,7 @@ import { SharedModule } from './../shared/shared.module';
     SharedModule
   ],
   declarations: [
-    FeatureComponent,
+    FeatureComponent
   ]
 })
 export class FeatureModule { }

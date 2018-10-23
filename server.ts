@@ -10,6 +10,9 @@ import { join } from 'path';
 import { readFileSync } from 'fs';
 const api = require('./server/routes/api');
 
+const cors = require('cors');
+const bodyParser = require('body-parser');
+
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
 
@@ -43,9 +46,9 @@ if (process.env.NODE_ENV !== 'dev') {
   });
 }
 
+app.use(cors());
+app.use(bodyParser.json());
 app.use('/api', api);
-app.set('view engine', 'html');
-app.set('views', join(DIST_FOLDER, 'browser'));
 
 // Server static files from /browser
 app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));

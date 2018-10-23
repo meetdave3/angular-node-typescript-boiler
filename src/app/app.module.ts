@@ -3,17 +3,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule } from '@angular/material/input';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+
 import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
@@ -26,15 +19,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),
-    HttpModule,
-    BrowserAnimationsModule,
     CommonModule,
-    FormsModule,
     AppRoutingModule,
-    MatFormFieldModule,
-    MatCardModule,
-    MatButtonModule,
-    MatInputModule,
+    HttpClientModule,
     SharedModule,
     NgbModule.forRoot(),
     ServiceWorkerModule.register('/../ngsw-worker.js', { enabled: environment.production })

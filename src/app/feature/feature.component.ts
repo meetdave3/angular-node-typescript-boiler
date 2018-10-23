@@ -1,29 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationStart, NavigationEnd } from '@angular/router';
+import { FeatureService } from './feature.service';
 
 @Component({
     selector: 'app-feature',
     templateUrl: './feature.component.html',
-    styleUrls: ['./feature.component.scss']
+    styleUrls: ['./feature.component.scss'],
+    providers: [FeatureService]
 })
 export class FeatureComponent implements OnInit {
 
-    showLoder: Boolean = false;
-    constructor(private router: Router) {
+    message: string;
 
-         this.router.events.subscribe(event => {
-            if (event instanceof NavigationStart) {
-                this.showLoder = true;
-                console.log('event started');
-            } else if (event instanceof NavigationEnd) {
-                this.showLoder = false;
-                console.log('event end');
-            }
-        });
-      }
-
+    constructor(private featureService: FeatureService) { }
 
     ngOnInit() {
+        this.featureService.getMessage().subscribe(
+            (message: string) => { this.message = message; console.log(this.message); },
+            error => { console.error(error); }
+        );
     }
 
 }
