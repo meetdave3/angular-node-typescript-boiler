@@ -8,7 +8,7 @@ This repo shall allow you to instantly get started with a full stack project in 
 
 ## Repo Features 
 
-- [x] Angular 6.1.10
+- [x] Angular 8.2
 - [x] Bootstrap
 - [x] Lazy Loaded Routes
 - [x] Angular Material
@@ -39,7 +39,7 @@ Run `npm run build:prerender`
 
 Then `npm run serve:ssr` to start the server
 
-This spins up a prerendered Node server on http://localhost:3015
+This spins up a SSRed Node server on http://localhost:3015
 
 ## Running unit tests
 
@@ -55,4 +55,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Contribution
 
-Pull Requests are always welcome. 
+Pull Requests are welcome. 
