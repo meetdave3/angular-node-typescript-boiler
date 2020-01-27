@@ -54,7 +54,7 @@
     "rxjs": "^6.3.3",
     "tracer": "^0.8.15",
     "ts-loader": "^4.5.0",
-    "zone.js": "^0.8.26"
+    "zone.js": "0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.803.23",
