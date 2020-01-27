@@ -31,7 +31,7 @@ if (process.env.NODE_ENV !== 'dev') {
 
   const { provideModuleMap } = require('@nguniversal/module-map-ngfactory-loader');
 
-  app.engine('html', (_, options, callback) => {
+  app.engine('html', (_, options: any, callback: any) => {
     renderModuleFactory(AppServerModuleNgFactory, {
       // Our index.html
       document: template,
